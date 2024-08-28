@@ -39,10 +39,14 @@ struct CreateLockParams {
     address lockedERC20;
     /// @param lockedAmount The locked token amount.
     uint256 lockedAmount;
+    /// @param lockUnlockOn The timestamp when lock will be unlocked.
+    uint256 lockUnlockOn;
 }
 
 interface ISecura {
     /** @notice Custom Errors */
+    error Secura_ZeroAmount();
+    error Secura_ZeroAddress();
     error Secura_InvalidLockAmount();
     error Secura_InvalidLockerId(uint256 lockerIdProvided);
     error Secura_LockerAlreadyUnlocked(uint256 unlockedOnBlock);
@@ -51,7 +55,9 @@ interface ISecura {
     error Secura_UnlockTimeNotPassed(uint256 currentBlock, uint256 unlockBlock);
 
     /** @notice Events */
-    event SecureLockExtended(uint256 lockId, uint256 unlockBlock);
+    event SecureLockExtended(uint256 indexed lockId, uint256 unlockBlock);
+    event SecureLockUnlocked(uint256 indexed lockId, uint256 unlockBlock);
+    event SecureLockCreated(uint256 indexed lockId, Locker lockerDetails);
 
     /**
      * @notice Returns the total amount locked by an owner and erc20 address.
@@ -79,7 +85,7 @@ interface ISecura {
      * @return lockerId The generated lock id.
      */
     function createSecureLocker(
-        CreateLockParams calldata lockParams
+        CreateLockParams memory lockParams
     ) external returns (uint256 lockerId);
 
     /**
