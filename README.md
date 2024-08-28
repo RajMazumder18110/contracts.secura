@@ -4,11 +4,23 @@ Secura is a decentralized application that lets users securely lock their tokens
 
 ## Table of Contents
 
+- [Technology](#technology)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployed Networks](#deployed-networks)
 - [Contributing](#contributing)
 - [Commit Linting](#commit-linting)
+
+## Technology
+
+Secura smart contracts are built using the following technologies:
+
+- **Solidity**: The primary programming language used for writing the smart contracts.
+- **Hardhat**: A development environment for compiling, deploying, testing, and debugging Ethereum-based smart contracts.
+- **TypeScript**: A strongly typed programming language used for scripting and testing in the project.
+- **Viem**: A library used for interacting with the Ethereum blockchain and your contracts.
+- **Chai**: An assertion library used in testing to validate the contract logic.
+- **Mocha**: A JavaScript test framework running on Node.js, used for running tests in the project.
 
 ## Installation
 
