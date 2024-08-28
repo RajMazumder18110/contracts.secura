@@ -1,0 +1,25 @@
+{
+  "name": "contracts.secura",
+  "version": "1.0.0",
+  "description": "Secura is a decentralized application that lets users securely lock their tokens for a specified period and set future vesting schedules. It offers robust protection and flexibility, ensuring your assets are safely managed until the right time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "Secura",
+    "locks",
+    "contracts",
+    "blockchain"
+  ],
+  "author": "Raj Mazumder <rajmazumder27.08.2001@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "hardhat": "^2.22.9",
+    "husky": "^9.1.5"
+  }
+}
