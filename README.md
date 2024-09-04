@@ -51,11 +51,9 @@ npx hardhat run scripts/deploy.ts --network <network-name>
 
 ## Deployed Networks
 
-| Network             | Contract Address            | Explorer URL                                                             |
-| ------------------- | --------------------------- | ------------------------------------------------------------------------ |
-| Ethereum            | `0xYourContractAddressHere` | [Etherscan](https://etherscan.io/address/0xYourContractAddressHere)      |
-| Polygon             | `0xYourContractAddressHere` | [Polygonscan](https://polygonscan.com/address/0xYourContractAddressHere) |
-| Binance Smart Chain | `0xYourContractAddressHere` | [BscScan](https://bscscan.com/address/0xYourContractAddressHere)         |
+| Network | Contract Address                             | Explorer URL                                                                                   |
+| ------- | -------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Amoy    | `0x91073D1b672d9eB2bf76f373bb0C83AfBBa0Fd03` | [PolygonScan](https://amoy.polygonscan.com/address/0x91073D1b672d9eB2bf76f373bb0C83AfBBa0Fd03) |
 
 ## Contributing
 
